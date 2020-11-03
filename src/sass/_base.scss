@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.big-title {
+  font-size: 9.6rem;
+  font-family: $font-display;
+  font-weight: 400;
+  color: $text-color;
+  margin-bottom: 3rem;
+}
+
+.medium-title {
+  font-size: 4.8rem;
+  font-weight: 400;
+  font-family: font-display;
+  color: white;
+
+  /* &--secondary {
+    background-color: $color-secondary;
+  } */
+}
+
+.small-title {
+}
+
+.text-normal {
+  font-weight: 300;
+  font-size: 1.8rem;
+  font-family: $font-text;
+}
