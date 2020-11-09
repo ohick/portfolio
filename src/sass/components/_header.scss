@@ -2,11 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 14rem;
 
   &__greeting {
-    margin-left: 14rem;
     width: 60rem;
+    margin-right: 5rem;
     color: $text-color;
   }
 
@@ -17,8 +16,14 @@
     align-items: center;
     flex-basis: 75rem;
     height: 30rem;
+    max-width: 35%;
+    min-width: 40rem;
     background-color: $color-primary;
     color: white;
+
+    @include respond(tab-port) {
+      display: none;
+    }
 
     & > p {
       font-weight: 400;
@@ -41,17 +46,19 @@
 }
 
 .header-bottom {
-  margin-top: 14rem;
-
   &__title-container {
     background-color: $color-secondary;
     height: 8rem;
     display: flex;
     align-items: center;
-    width: 45%;
+    width: 70rem;
 
-    & > h2 {
-      padding-left: 14rem;
+    @include respond(tab-land) {
+      width: 60rem;
+    }
+
+    @include respond(phone) {
+      width: 35rem;
     }
   }
 }

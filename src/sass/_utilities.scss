@@ -1,0 +1,23 @@
+.margin-l {
+  margin-left: 14rem;
+
+  @include respond(tab-land) {
+    margin-left: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-left: 2rem;
+  }
+}
+
+.margin-t {
+  margin-top: 14rem;
+
+  @include respond(tab-port) {
+    margin-top: 10rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
+}
