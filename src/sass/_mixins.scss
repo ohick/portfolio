@@ -27,3 +27,15 @@
     }
   }
 }
+
+@mixin croche {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 9rem;
+    height: 6px;
+    background-color: inherit;
+  }
+}
