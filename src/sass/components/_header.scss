@@ -52,15 +52,8 @@
     height: 8rem;
     display: flex;
     align-items: center;
-    width: 70rem;
-
-    @include respond(tab-land) {
-      width: 60rem;
-    }
-
-    @include respond(phone) {
-      width: 35rem;
-    }
+    width: max-content;
+    padding-right: 5rem;
   }
 
   &__music {
