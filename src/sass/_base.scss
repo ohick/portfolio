@@ -28,16 +28,32 @@ html {
   font-weight: 400;
   color: $text-color;
   margin-bottom: 3rem;
+
+  @include respond(phone) {
+    font-size: 7rem;
+  }
 }
 
 .medium-title {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 400;
   font-family: font-display;
   color: white;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .small-title {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: font-display;
+  color: black;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 }
 
 .text-normal {
