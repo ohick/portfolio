@@ -2,6 +2,10 @@
   margin-left: 14rem;
 
   @include respond(tab-land) {
+    margin-left: 10rem;
+  }
+
+  @include respond(tab-port) {
     margin-left: 8rem;
   }
 
@@ -20,4 +24,8 @@
   @include respond(phone) {
     margin-top: 5rem;
   }
+}
+
+.line {
+  border-left: solid 3px $color-grey;
 }
