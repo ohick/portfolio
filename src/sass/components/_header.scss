@@ -75,7 +75,7 @@
 
 .git-staff {
   display: block;
-  position: absolute;
+  transform: translateY(3px);
   z-index: 10;
   height: 2px;
 
@@ -85,38 +85,78 @@
     width: 100%;
   }
 
-  /* &--2 {
-    width: 10rem;
-    left: 23.3rem;
-  } */
-
-  /* &--curve1 {
-    display: block;
-    position: absolute;
-
-    width: 4.1rem;
-    height: 3rem;
-    left: 19rem;
-    top: -2.7rem;
-
-    border: solid 3px #828282;
-    border-color: transparent #828282 #828282 transparent;
-    border-radius: 0 0 1rem 0;
+  &--2 {
+    transform: translate(10rem, 2.5px);
+    width: 14rem;
   }
 
-  &--curve2 {
-    display: block;
-    position: absolute;
+  &--3 {
+    transform: translate(35rem, 2.5px);
+    width: 21rem;
+  }
+}
 
-    width: 3.8rem;
-    height: 3rem;
-    left: 22.8rem;
-    top: -3.8rem;
+.curve-bottom-r {
+  display: block;
+  width: 4.1rem;
+  height: 3rem;
 
-    border: solid 3px #828282;
-    border-color: #828282 transparent transparent #828282;
-    border-radius: 1rem 0 0 0;
-  } */
+  border: solid 3px;
+  border-color: transparent #828282 #828282 transparent;
+  border-radius: 0 0 1rem 0;
+
+  &--1 {
+    transform: translate(4.98rem, -2.8rem);
+  }
+  &--2 {
+    transform: translate(18rem, -6.2rem);
+  }
+}
+
+.curve-top-l {
+  position: absolute;
+  width: 3.8rem;
+  height: 3.5rem;
+  border: solid 3px;
+  border-color: #828282 transparent transparent #828282;
+  border-radius: 1rem 0 0 0;
+
+  &--1 {
+    transform: translateX(-1.18rem);
+  }
+}
+
+.curve-top-r {
+  //position: absolute;
+  height: 3.5rem;
+  width: 3.8rem;
+  border: solid 3px;
+  border-color: #828282 #828282 transparent transparent;
+  border-radius: 0 1rem 0 0;
+
+  &--1 {
+    transform: translateX(11.46rem);
+  }
+
+  &--2 {
+    transform: translate(30.45rem, -6.5rem);
+  }
+}
+
+.curve-bottom-l {
+  height: 3.5rem;
+  width: 3.8rem;
+  border: solid 3px;
+  border-color: transparent transparent #828282 #828282;
+  border-radius: 0 0 0 1rem;
+
+  &--1 {
+    transform: translate(25rem, -6.3rem);
+  }
+
+  &--2 {
+    transform: translate(-0.98rem, -3.2rem);
+  }
 }
 
 .note {
@@ -168,7 +208,7 @@
     border-radius: 50%;
     background-color: inherit;
     top: 4rem;
-    left: -3.6rem;
+    left: -3.55rem;
 
     @include respond(phone) {
       width: 2rem;
