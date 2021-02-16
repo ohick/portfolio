@@ -59,4 +59,17 @@
   &__music {
     margin-top: 6rem;
   }
+
+  &__score-wrapper {
+    width: 100vw;
+
+    > img {
+      margin-top: 7rem;
+      width: 100%;
+
+      @include respond(tab-port) {
+        margin-top: 4rem;
+      }
+    }
+  }
 }

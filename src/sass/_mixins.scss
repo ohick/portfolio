@@ -27,20 +27,3 @@
     }
   }
 }
-
-@mixin croche {
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 100;
-    width: 7rem;
-    height: 6px;
-    background-color: inherit;
-
-    @include respond(phone) {
-      height: 2.5px;
-      width: 3rem;
-    }
-  }
-}
