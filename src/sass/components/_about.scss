@@ -1,25 +1,24 @@
+.section-wrapper {
+  overflow: hidden;
+}
+
 .about {
   display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: 55% 1fr;
-  align-items: end;
-  row-gap: 10rem;
-  margin-top: 7rem;
-  margin-bottom: 10rem; /******TO REMOVE*******/
-
-  @include respond(tab-land) {
-    row-gap: 5rem;
-  }
+  grid-template-rows: 35rem 1fr;
+  grid-template-columns: 55% 45%;
+  align-items: start;
+  margin: 7rem 5rem 7rem 14rem;
 
   @include respond(tab-port) {
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: 1fr;
-    row-gap: 4rem;
-    margin: 10rem;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: 95vw;
+    row-gap: 10rem;
+    margin: 5rem;
   }
 
   @include respond(phone) {
     margin: 2rem;
+    row-gap: 5rem;
   }
 
   &__title-container {
@@ -34,10 +33,10 @@
   &__text {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+    color: $text-color;
 
     @include respond(tab-port) {
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
+      margin-right: 5rem;
     }
   }
 
@@ -64,12 +63,30 @@
   &__skills {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    padding-left: 20rem;
+    margin-right: 10rem;
 
     @include respond(tab-port) {
       grid-row: 2 / 3;
       grid-column: 1 / 2;
       padding-left: 0;
+      justify-self: center;
+    }
+
+    > img {
+      max-height: 50rem;
+      max-width: 50rem;
+      transform: translateY(-15rem);
+      object-fit: cover;
+
+      @include respond(tab-land) {
+        transform: translate(-10rem, -15rem);
+      }
+
+      @include respond(tab-port) {
+        transform: translateY(0);
+        transform: translateX(0);
+        max-width: 95vw;
+      }
     }
   }
 
@@ -87,6 +104,7 @@
   }
 
   &__experience {
+    align-self: end;
     @include respond(tab-port) {
       grid-row: 4 / 5;
       grid-column: 1 / 2;

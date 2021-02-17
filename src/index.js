@@ -1,5 +1,5 @@
 import './sass/main.scss';
 
-import setScoreImage from './js/img_loader';
+import loadImage from './js/img_loader';
 
-document.addEventListener('DOMContentLoaded', setScoreImage);
+document.addEventListener('DOMContentLoaded', loadImage);
