@@ -9,6 +9,13 @@
     color: $text-color;
   }
 
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    color: $color-tertiary;
+    font-weight: 500;
+  }
+
   &__yt {
     display: flex;
     flex-direction: column;
@@ -69,6 +76,10 @@
 
       @include respond(tab-port) {
         margin-top: 4rem;
+      }
+
+      @include respond(phone) {
+        width: 200vw;
       }
     }
   }

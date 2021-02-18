@@ -15,7 +15,7 @@
         <a class="navigation__link" href="#">Olivia Hick</a>
       </h1>
       <ul class="navigation__list">
-        <li><a class="navigation__link" href="#">About</a></li>
+        <li><a class="navigation__link" href="#about">About</a></li>
         <li><a class="navigation__link" href="#">Contact</a></li>
       </ul>
     </nav>
@@ -25,10 +25,17 @@
         <div class="header-top__greeting margin-l">
           <h1 class="big-title">Bonjour,</h1>
           <p class="text-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            deserunt eum nostrum nesciunt inventore? Vel voluptatum veniam
-            dolore nobis, deserunt, vitae facilis officiis totam incidunt
-            mollitia architecto voluptates similique quam?
+            et bienvenue sur mon fake <b>portfolio</b> ! Il ne s'agit pas ici
+            d'exposer mes réalisations passées mais de showcaser mes aptitudes
+            en développement frontend. Ce petit portfolio est composé tout
+            simplement sur base de <b>Javascript</b> et de <b>Sass</b>.
+          </p>
+          <p class="text-normal">
+            Je me présente, <b>Olivia</b>, développeuse <b>frontend</b>, venant
+            de Belgique, établie à <b>Nantes</b>, appréciant créer des choses de
+            mes propres mains, la musique, et <i>les frites</i>. N'hésitez pas à
+            jeter un oeil au
+            <a class="header-top__link" href="#">repo github</a> de ce site.
           </p>
         </div>
         <div class="header-top__yt">
@@ -45,23 +52,26 @@
     </header>
 
     <main>
-      <section class="section-wrapper margin-t">
+      <section class="section-wrapper margin-t" id="about">
         <div class="about__title-container">
           <h2 class="medium-title margin-l">About</h2>
         </div>
         <div class="about margin-l">
           <p class="about__text text-normal">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            deserunt eum nostrum nesciunt inventore? Vel voluptatum veniam
-            dolore nobis, deserunt, vitae facilis officiis totam incidunt
-            mollitia architecto voluptates similique quam? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Explicabo deserunt eum nostrum
-            nesciunt inventore? Vel voluptatum veniam dolore nobis, deserunt,
-            vitae facilis officiis totam incidunt mollitia architecto voluptates
-            similique quam? Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Explicabo deserunt eum nostrum nesciunt inventore? Vel
-            voluptatum veniam dolore nobis, deserunt, vitae facilis officiis
-            totam incidunt mollitia architecto voluptates similique quam?
+            À la recherche d'une carrière dans le technique et suite aux
+            conseils de mon entourage baignant déjà dans ce métier, j'ai décidé
+            d'apprendre de mes propres moyens le <b>développement web</b>. Je me
+            suis battue avec du <b>CSS</b>, j'ai chipoté au <b>PHP</b>,
+            découvert le <b>JavaScript</b>. Après plusieurs mois de
+            tatillonnage, tutos divers et variés, j'ai fait le grand pas : j'ai
+            quitté mon emploi et entrepris une <b>formation à temps plein</b> en
+            ligne.<br />
+            C'est ainsi que j'ai acquis de solides connaissances, façonné
+            plusieurs <b>projets pratiques</b> et fait mes premiers pas dans
+            l'écosystème du <b>développement frontend</b>. Ce qui m'attire dans
+            ce nouveau monde : la nécessité d'une <b>structure</b> bien établie,
+            l'attention au <b>détail</b>, et le besoin <b>d'inventivité</b>.
+            J'aime pouvoir relever des défis autant techniques que créatifs !
           </p>
 
           <div class="about__skills" id="skills"></div>
@@ -70,7 +80,7 @@
             <h2 class="about__title small-title line">Education</h2>
             <h3 class="about__date">2020</h3>
             <div class="about__item line">
-              <h3>React & Redux</h3>
+              <h3>Modern React & Redux</h3>
               <ul class="about__list">
                 <li>React</li>
                 <li>Redux</li>
@@ -78,7 +88,7 @@
                 <li>React Hooks</li>
               </ul>
             </div>
-            <h3 class="about__date">2019</h3>
+            <h3 class="about__date">2020</h3>
             <div class="about__item line">
               <h3>Frontend Nanodegree</h3>
               <ul class="about__list">
@@ -90,7 +100,7 @@
                 <li>Webpack</li>
               </ul>
             </div>
-            <h3 class="about__date">2010</h3>
+            <h3 class="about__date">2017</h3>
             <div class="about__item line">
               <h3>Musicology Master's Degree</h3>
             </div>
@@ -100,7 +110,7 @@
             <h2 class="about__title small-title line">Experience</h2>
             <h3 class="about__date">2020</h3>
             <div class="about__item line">
-              <h3>Frontend React Internship</h3>
+              <h3>Frontend Internship</h3>
               <ul class="about__list">
                 <li>React</li>
                 <li>Redux</li>
@@ -120,6 +130,7 @@
           </div>
         </div>
       </section>
+      <button class="scroll-button" id="scrollToTopBtn">&uarr;<br /></button>
     </main>
   </body>
 </html>

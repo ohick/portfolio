@@ -1,0 +1,34 @@
+.scroll-button {
+  border-style: none;
+  outline-style: none;
+  cursor: pointer;
+
+  background-color: white;
+  border: $color-tertiary solid 2px;
+  color: $color-tertiary;
+  font-size: 3rem;
+  width: 4.5rem;
+  padding-bottom: 1rem;
+
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 100;
+  opacity: 0;
+
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: rotateY(180deg);
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
