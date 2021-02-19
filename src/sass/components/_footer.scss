@@ -1,0 +1,32 @@
+.footer {
+  border-top: solid $color-primary 1px;
+  color: $text-color;
+  display: flex;
+  align-items: baseline;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__title {
+    padding-left: 2rem;
+    color: $color-primary;
+    font-weight: 300;
+    font-size: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  &__list {
+    padding-left: 2rem;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+    margin-left: 8rem;
+
+    & > li:first-child {
+      margin-bottom: 5rem;
+      color: $text-color;
+    }
+  }
+}

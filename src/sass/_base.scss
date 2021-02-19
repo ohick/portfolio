@@ -62,3 +62,19 @@ html {
   font-size: 1.8rem;
   font-family: $font-text;
 }
+
+.small-link {
+  &::after {
+    border-bottom: 1px solid currentColor;
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 2.2rem;
+    left: 0;
+    transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+  }
+
+  &:hover::after {
+    right: 0;
+  }
+}
