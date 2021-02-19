@@ -10,47 +10,50 @@
     <title>Hello there</title>
   </head>
   <body>
-    <nav class="navigation">
+    <nav class="navigation" id="nav">
       <h1 class="navigation__logo">
-        <a class="navigation__link" href="#">Olivia Hick</a>
+        <span class="navigation__item">Olivia Hick</span>
       </h1>
       <ul class="navigation__list">
         <li>
-          <a class="navigation__link small-link" href="#about">About</a>
+          <a class="navigation__item small-link" href="#about">About</a>
         </li>
         <li>
-          <a class="navigation__link small-link" href="#contact">Contact</a>
+          <a class="navigation__item small-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
 
     <header class="header">
       <div class="header-top margin-t">
-        <div class="header-top__greeting margin-l">
+        <div class="greeting margin-l">
           <h1 class="big-title">Bonjour,</h1>
-          <p class="text-normal">
-            et bienvenue sur mon fake <b>portfolio</b> ! Il ne s'agit pas ici
-            d'exposer mes réalisations passées mais de showcaser mes aptitudes
-            en développement frontend. Ce petit portfolio est composé tout
-            simplement sur base de <b>Javascript</b> et de <b>Sass</b>.
-          </p>
-          <p class="text-normal">
-            Je me présente, <b>Olivia</b>, développeuse <b>frontend</b>, venant
-            de Belgique, établie à <b>Nantes</b>, appréciant créer des choses de
-            mes propres mains, la musique, et <i>les frites</i>. N'hésitez pas à
-            jeter un oeil au
-            <a
-              class="header-top__link small-link"
-              href="https://github.com/ohick/portfolio"
-              target="_blank"
-              >repo github</a
-            >
-            de ce site.
-          </p>
+          <div class="greeting__text">
+            <p class="text-normal">
+              et bienvenue sur mon fake <b>portfolio</b> ! Il ne s'agit pas ici
+              d'exposer mes réalisations passées mais de showcaser mes aptitudes
+              en développement frontend. Ce petit portfolio est composé tout
+              simplement sur base de <b>Javascript</b> et de <b>Sass</b>.
+            </p>
+            <p class="text-normal">
+              Je me présente, <b>Olivia</b>, développeuse <b>frontend</b>,
+              venant de Belgique, établie à <b>Nantes</b>, appréciant créer des
+              choses de mes propres mains, la musique, et <i>les frites</i>.
+              N'hésitez pas à jeter un oeil au
+              <a
+                class="header-top__link small-link"
+                href="https://github.com/ohick/portfolio"
+                target="_blank"
+                >repo github</a
+              >
+              de ce site.
+            </p>
+          </div>
         </div>
-        <div class="header-top__yt">
-          <p>For a coding-friendly song</p>
-          <button class="header-top__button">Click here</button>
+        <div class="apibox">
+          <!-- <p>For a coding-friendly song</p> -->
+          <button class="apibox__button">woof ?</button>
+          <button class="apibox__button">meow ?</button>
         </div>
       </div>
       <div class="header-bottom margin-t">
@@ -145,15 +148,23 @@
 
     <footer class="footer margin-t" id="contact">
       <h1 class="footer__title margin-l margin-t">Contact Me</h1>
-      <ul class="footer__list line">
-        <li class="small-title">Olivia Hick</li>
-        <li>
-          50 Rue du Calvaire de Grillaud<br />
-          44100 Nantes
-        </li>
-        <li>06 22 10 40 24</li>
-        <li>oliviahick1@gmail.com</li>
-      </ul>
+      <address>
+        <ul class="footer__list line">
+          <li class="small-title">Olivia Hick</li>
+          <li>
+            50 Rue du Calvaire de Grillaud<br />
+            44100 Nantes
+          </li>
+          <li>
+            <a href="tel:+330622104024" class="small-link">06 22 10 40 24</a>
+          </li>
+          <li>
+            <a href="mailto:oliviahick1@gmail.com" class="small-link"
+              >oliviahick1@gmail.com</a
+            >
+          </li>
+        </ul>
+      </address>
     </footer>
   </body>
 </html>

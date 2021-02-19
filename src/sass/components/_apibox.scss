@@ -1,0 +1,44 @@
+.apibox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 75rem;
+  height: 30rem;
+  max-width: 35%;
+  min-width: 40rem;
+  background-color: $color-primary;
+  color: white;
+  animation: moveInRight 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
+  &__button {
+    margin-top: 2rem;
+
+    color: $color-primary;
+    text-transform: uppercase;
+    border: none;
+    padding: 2rem 4rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    cursor: pointer;
+    background-image: linear-gradient(
+      90deg,
+      white 0%,
+      white 49%,
+      $color-primary 50%
+    );
+    background-size: 300%;
+
+    transition: color 0.4s, background-position 0.4s;
+
+    &:hover {
+      background-position: 100%;
+      color: white;
+    }
+  }
+}

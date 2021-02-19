@@ -2,8 +2,11 @@
 @import 'mixins';
 @import 'utilities';
 @import 'base';
+@import 'typo';
+@import 'animations';
 
 @import './components/about';
+@import './components/apibox';
 @import './components/footer';
 @import './components/header';
 @import './components/navbar';
